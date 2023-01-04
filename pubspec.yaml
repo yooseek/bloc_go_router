@@ -49,6 +49,7 @@ dependencies:
   go_router:
   dartz:
   flutter_screenutil:
+  rxdart: ^0.27.5
 
 dev_dependencies:
   flutter_test:

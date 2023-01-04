@@ -1,4 +1,6 @@
 
+import 'package:bloc_go_router/feature/auth/data/auth_data.dart';
+import 'package:bloc_go_router/feature/auth/domain/auth_domain.dart';
 import 'package:get_it/get_it.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:go_router/go_router.dart';
@@ -23,7 +25,7 @@ Future<void> initializeDependencies() async {
 
 
   //repoimpl
-
+  serviceLocator.registerLazySingleton<AuthRepository>(() => AuthRepositoryImpl());
   //usecases - 생략
 
   //blocs

@@ -1,4 +1,5 @@
-import 'package:bloc_go_router/feature/auth/presentation/auth.dart';
+import 'package:bloc_go_router/feature/auth/presentation/auth_presentation.dart';
+import 'package:bloc_go_router/feature/sign/presentation/sign_presentation.dart';
 
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
@@ -25,6 +26,16 @@ class KseekGoRouterConfig {
       path: '/',
       name: 'splash',
       builder: (context, state) => const SplashPage()
+    ),
+    GoRoute(
+        path: '/home',
+        name: 'home',
+        builder: (context, state) => const HomeView()
+    ),
+    GoRoute(
+        path: '/sign',
+        name: 'sign',
+        builder: (context, state) => const SignView()
     ),
   ];
 
