@@ -1,0 +1,1 @@
+export 'screen/splash_page.dart';
